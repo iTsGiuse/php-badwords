@@ -16,8 +16,8 @@
             <div class="row">    
                 <div class="col text-center mt-5">
                     <form action="saluto.php" method="GET">
-                        <input class="me-2" type="text" name="userName" placeholder="inserisci il tuo nome" required>
-                        <input class="me-2" type="text" name="userSurname" placeholder="inserisci il tuo congome" required>
+                        <input class="me-2" type="text" name="paragrafo" placeholder="inserisci il tuo nome" required>
+                        <input class="me-2" type="text" name="blackList" placeholder="inserisci il tuo congome" required>
                         <button type="submit">INVIA</button>
                     </form>
                 </div>
