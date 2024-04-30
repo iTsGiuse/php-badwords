@@ -15,10 +15,10 @@
         <div class="container">
             <div class="row">    
                 <div class="col text-center mt-5">
-                    <form action="">
-                        <input class="me-2" type="text" placeholder="inserisci il tuo nome" required>
-                        <input class="me-2" type="text" placeholder="inserisci il tuo congome" required>
-                        <button>INVIA</button>
+                    <form action="saluto.php" method="GET">
+                        <input class="me-2" type="text" name="userName" placeholder="inserisci il tuo nome" required>
+                        <input class="me-2" type="text" name="userSurname" placeholder="inserisci il tuo congome" required>
+                        <button type="submit">INVIA</button>
                     </form>
                 </div>
             </div>
