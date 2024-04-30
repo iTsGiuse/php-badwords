@@ -14,10 +14,10 @@
     <main>
         <div class="container">
             <div class="row">    
-                <div class="col text-center mt-5">
-                    <form action="saluto.php" method="GET">
-                        <input class="me-2" type="text" name="paragrafo" placeholder="inserisci il tuo nome" required>
-                        <input class="me-2" type="text" name="blackList" placeholder="inserisci il tuo congome" required>
+                <div class="col mt-5">
+                    <form class="d-flex align-content-center justify-content-center" action="BlackList.php" method="GET">
+                        <textarea class="me-2" type="text" name="paragrafo" placeholder="inserisci il paragrafo" required></textarea>
+                        <input class="me-2" type="text" name="blackList" placeholder="inserisci la parola blacklist">
                         <button type="submit">INVIA</button>
                     </form>
                 </div>

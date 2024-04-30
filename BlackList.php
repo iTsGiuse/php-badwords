@@ -1,8 +1,14 @@
 <?php
+    /* RECUPERA I DATI INVIATI DALL'ALTRA PAGINA */
     $userParagrafo = $_GET['paragrafo'];
     $userBlackList = $_GET['blackList'];
 
+    /* TROVA LUNGHEZZA PARAGRAFO */
     $lunghezzaUserParagrafo = strlen($userParagrafo);
+
+    /* TRASFORMA LA PAROLA IN BLACKLIST CON DEGLI '*' */
+    $userParagrafoCensurato = str_replace($userBlackList, "***", $userParagrafo);
+    $lunghezzaUserParagrafoCensurato = strlen($userParagrafoCensurato);
 ?>
 
 
@@ -26,7 +32,17 @@
                         <label>Il paragrafo è: <?= $userParagrafo ?></label>
                     </div>
                     <div>
-                        <label>La lunghezza è <?= $lunghezzaUserParagrafo ?></label>
+                        <label>La lunghezza è: <?= $lunghezzaUserParagrafo ?></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center mt-5">
+                    <div>
+                        <label>Il paragrafo censurato è: <?= $userParagrafoCensurato ?></label>
+                    </div>
+                    <div>
+                        <label>La lunghezza del paragrafo censurato è: <?= $lunghezzaUserParagrafoCensurato ?></label>
                     </div>
                 </div>
             </div>
